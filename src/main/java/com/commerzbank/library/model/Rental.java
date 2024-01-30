@@ -13,6 +13,14 @@ public class Rental {
     private LocalDate returnedOn;
     private boolean returned;
 
+    public Rental(Book book, Person person, LocalDate rentedOn, LocalDate rentedUntil) {
+        this.id = UUID.randomUUID();
+        this.book = book;
+        this.person = person;
+        this.rentedOn = rentedOn;
+        this.rentedUntil = rentedUntil;
+        this.returned = false;
+    }
     public Rental(Book book, Person person, LocalDate rentedOn, LocalDate rentedUntil, LocalDate returnedOn, boolean returned) {
         this.id = UUID.randomUUID();
         this.book = book;
