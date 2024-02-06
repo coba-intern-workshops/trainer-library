@@ -1,27 +1,27 @@
 package com.commerzbank.library.repository;
 
-import com.commerzbank.library.model.Rental;
+import com.commerzbank.library.model.Person;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Repository
-public class RentalRepositoryImpl implements RepositoryIfc<Rental> {
+public class PersonRepositoryImpl implements RepositoryIfc<Person>{
 
-    private List<Rental> rentals = new ArrayList<>();
+    private List<Person> persons = new ArrayList<>();
 
     @Override
-    public List<Rental> findAll() {
-        return rentals;
+    public List<Person> findAll() {
+        return persons;
     }
 
     @Override
-    public Rental save(Rental object) {
+    public Person save(Person object) {
         if (object == null){
             throw new IllegalArgumentException("Cannot save null object");
         }
-        rentals.add(object);
+        persons.add(object);
         return object;
     }
 }

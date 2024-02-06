@@ -1,7 +1,6 @@
 package com.commerzbank.library.repository;
 
 import com.commerzbank.library.model.*;
-import net.bytebuddy.asm.Advice;
 import org.assertj.core.api.WithAssertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -13,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class RentalRepositoryImplTest implements WithAssertions {
 
-    private Repository<Rental> repository;
+    private RepositoryIfc<Rental> repository;
 
     @BeforeEach
     void setUp() {

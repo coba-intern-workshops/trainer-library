@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class BookRepositoryImplTest {
 
-    private Repository<Book> repository;
+    private RepositoryIfc<Book> repository;
 
     @BeforeEach
     void setUp() {
