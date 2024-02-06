@@ -16,6 +16,7 @@ import java.util.List;
 // - endpoint do wyszukiwania po
 // - endpoint do usuwania
 // - dodanie tych samych endpointów do pozostałych kontrolerów
+// - testy MockMVC
 
 @RestController
 @RequiredArgsConstructor
