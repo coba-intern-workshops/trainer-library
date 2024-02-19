@@ -12,5 +12,6 @@ public class Book {
     private UUID id;
     private String title;
     private String author;
+    @Setter
     private BookStatus bookStatus;
 }

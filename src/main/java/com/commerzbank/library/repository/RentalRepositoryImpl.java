@@ -5,6 +5,8 @@ import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
+import java.util.UUID;
 
 @Repository
 public class RentalRepositoryImpl implements RepositoryIfc<Rental> {
@@ -23,5 +25,10 @@ public class RentalRepositoryImpl implements RepositoryIfc<Rental> {
         }
         rentals.add(object);
         return object;
+    }
+
+    @Override
+    public Optional<Rental> findById(UUID id) {
+        return Optional.empty();
     }
 }

@@ -9,6 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+
+//TODO:
+// tworzenie - walidacja czy nie wyporzyczona
+// kasowanie - zwalnianie stanu - aktualizacja statusu i wryfikacja czy przpisana do tego usera
+// przedluzanie - zmiana czasu oddania - zawsze na 7 dni - weryfikacja czy przypisana
 @RestController
 @RequiredArgsConstructor
 public class RentalController {

@@ -5,6 +5,8 @@ import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
+import java.util.UUID;
 
 @Repository
 public class BookRepositoryImpl implements RepositoryIfc<Book> {
@@ -24,4 +26,11 @@ public class BookRepositoryImpl implements RepositoryIfc<Book> {
         books.add(bookToSave);
         return bookToSave;
     }
+
+    @Override
+    public Optional<Book> findById(UUID id) {
+        return books.stream().filter(book -> book.getId().equals(id)).findFirst();
+    }
+
+
 }

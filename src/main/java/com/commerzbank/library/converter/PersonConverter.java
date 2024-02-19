@@ -1,10 +1,6 @@
 package com.commerzbank.library.converter;
 
-import com.commerzbank.library.dto.BookDto;
-import com.commerzbank.library.dto.BookStatusDto;
 import com.commerzbank.library.dto.UserTypeDto;
-import com.commerzbank.library.model.Book;
-import com.commerzbank.library.model.BookStatus;
 import com.commerzbank.library.model.Person;
 import com.commerzbank.library.dto.PersonDto;
 import com.commerzbank.library.model.UserType;
